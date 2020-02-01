@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment3.FXMLDocumentController">
+   <children>
+      <Text layoutX="203.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Dubai Zoo!" wrappingWidth="213.515625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextArea editable="false" layoutX="3.0" layoutY="40.0" prefHeight="70.0" prefWidth="594.0" text="Select a section from the below displayed list of sections, to print animals from:" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextArea>
+      <RadioButton fx:id="radioButton6" layoutX="52.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectSection" selected="true" text="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton7" layoutX="159.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectSection" text="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton8" layoutX="268.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectSection" text="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton9" layoutX="376.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectSection" text="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton10" layoutX="485.0" layoutY="116.0" mnemonicParsing="false" onAction="#selectSection" text="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="button11" layoutX="201.0" layoutY="154.0" mnemonicParsing="false" onAction="#displayAnimalsOfASection" prefHeight="33.0" prefWidth="199.0" text="Display Animals Of The Section" />
+      <TextArea fx:id="textArea2" editable="false" layoutX="23.0" layoutY="200.0" prefHeight="134.0" prefWidth="554.0" promptText="Result to be displayed here..." />
+      <Button fx:id="button12" layoutX="329.0" layoutY="347.0" mnemonicParsing="false" onAction="#continueToMenu" prefHeight="33.0" prefWidth="255.0" text="Continue to menu" />
+   </children>
+</AnchorPane>
